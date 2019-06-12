@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Minimalistic fetch test. Dynamic UI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/menu.css">
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1> CA1 </h1>
+        </div>
+
+        <div class="topnav">
+            <a href="index.html">Frontpage</a>
+            <a href="Calc.html">Calculator page</a>
+            <a href="boysGirls.html">Work with arrays</a>
+            <a href="fetchtest.html">Fetch data</a>
+        </div>
+        <br>
+        <div class="container">
+            <h2>Fetch</h2>
+            <ul id="users"></ul>
+            <div class='inputs'>
+                <input id='userID' type="number" placeholder='userID' />
+                <button id='specificUser'>Get User</button>
+                <button id='allUsers'>Get All</button>
+            </div>
+            <div class="list">
+                <div id="list"></div>
+            </div>
+        </div>
+        <script src="fetchtest.js"></script>
+
+    </body>
+
+</html>

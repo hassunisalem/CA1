@@ -1,0 +1,20 @@
+language: java
+jdk: oraclejdk8
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script:
+  - mvn test
+  
+notifications:
+  email:
+    - cph-cj331@cphbusiness.dk
+    - cph-jv45@cphbusiness.dk
+    - cph-ns156@cphbusiness.dk
+    - cph-mm454@cphbusiness.dk
+    
+after_success:
+
+  - mvn tomcat7:deploy -Premote 
